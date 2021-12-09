@@ -53,28 +53,3 @@ program
 program.parse(process.argv);
 const options = program.opts();
 invokeAction(options);
-
-// testing app:
-const idToGet = '1';
-const idToUpdate = '2';
-const idToRemove = '3';
-
-// testing adding new contact:
-const newContactData = {
-  name: 'Masker',
-  email: 'poopDestroyer@test.mail',
-  phone: '+38(093)123-23-23',
-};
-
-// testing updating existing contact:
-const contactDataToUpdate = {
-  name: 'John Masker',
-  email: 'poopDestroyer@gmail.mail',
-  phone: '+38(093)123-23-23',
-};
-
-// invokeAction({ action: 'addNewContact', ...newContactData });
-// invokeAction({ action: 'getAllContacts' });
-// invokeAction({ action: 'getContactById', id: idToGet });
-// invokeAction({ action: 'updateContactById', id: idToUpdate, ...contactDataToUpdate });
-// invokeAction({ action: 'removeContactById', id: idToRemove });

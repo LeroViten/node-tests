@@ -1,5 +1,4 @@
 const fs = require('fs/promises');
-
 const contactsPath = require('./contactsPath');
 
 const getAllContacts = async () => {
